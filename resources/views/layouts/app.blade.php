@@ -7,9 +7,9 @@
     <title>@yield('title')</title>
     <link
         rel="stylesheet"
-        href="{{ url('frontend/libraries/bootstrap/css/bootstrap.css') }}"
+        href="{{ url('./frontend/libraries/bootstrap/css/bootstrap.css') }}"
     />
-    <link rel="stylesheet" href="{{ url('frontend/styles/main.css') }}" />
+    <link rel="stylesheet" href="{{ url('./frontend/styles/main.css') }}" />
     <link
         href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap"
         rel="stylesheet"
@@ -18,6 +18,7 @@
         href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
         rel="stylesheet"
     />
+    @include('includes.style')
 </head>
 <body>
 <!-- Semantic elements -->
@@ -83,7 +84,7 @@
         </div>
     </nav>
 </div>
-@yield(''content)
+@yield('content')
 <footer class="section-footer mt-5 mb-4 border-top">
     <div class="container pt-5 pb-5">
         <div class="row justify-content-center">
@@ -149,8 +150,12 @@
         </div>
     </div>
 </footer>
-<script src="{{ url('frontend/libraries/retina/retina.js') }}"></script>
-<script src="{{ url('frontend/libraries/jquery/jquery-3.4.1.min.js') }}"></script>
-<script src="{{ url('frontend/libraries/bootstrap/js/bootstrap.js') }}"></script>
+<script src="{{ url('/frontend/libraries/retina/retina.js') }}"></script>
+<script src="{{ url('./frontend/libraries/jquery/jquery-3.4.1.min.js') }}"></script>
+<script src="{{ url('./frontend/libraries/bootstrap/js/bootstrap.js') }}"></script>
+
+{{--<script src="'./public/frontend/libraries/retina/retina.js"></script>--}}
+{{--<script src="'./public/frontend/libraries/jquery/jquery-3.4.1.min.js"></script>--}}
+{{--<script src="'./public/frontend/libraries/bootstrap/js/bootstrap.js"></script>--}}
 </body>
 </html>
