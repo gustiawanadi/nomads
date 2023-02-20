@@ -64,7 +64,7 @@
                             <div class="travel-country">INDONESIA</div>
                             <div class="travel-location">DERATAN, BALI</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
@@ -78,7 +78,7 @@
                             <div class="travel-country">INDONESIA</div>
                             <div class="travel-location">BROMO, MALANG</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
@@ -87,12 +87,12 @@
                     <div class="col-sm-6 col-md-4 col-lg-3">
                         <div
                             class="card-travel text-center d-flex flex-column"
-                            style="background-image: {{url('frontend/images/travel-3.jpg')}}"
+                            style="background-image: url('frontend/images/travel-3.jpg');"
                         >
                             <div class="travel-country">INDONESIA</div>
                             <div class="travel-location">NUSA PENIDA</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
@@ -106,7 +106,7 @@
                             <div class="travel-country">INDONESIA</div>
                             <div class="travel-location">DUBAI</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
@@ -173,7 +173,7 @@
                         <div class="card card-testimonial text-center">
                             <div class="testimonial-content">
                                 <img
-                                    src="frontend/images/avatar-2.png"
+                                    src="{{ url('./frontend/images/avatar-2.png') }}"
                                     alt=""
                                     class="mb-4 rounded-circle"
                                 />
